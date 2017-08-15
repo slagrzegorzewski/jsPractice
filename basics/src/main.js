@@ -32,4 +32,35 @@ document.addEventListener("DOMContentLoaded", function () {
     linObj.innerText = "Type of const: " + obj + " is " + typeof obj;
     linUnd.innerText = "Type of const: " + und + " is " + typeof und;
 
+    let chckWeather = (weather) => {
+        if(weather.toLowerCase() == "raining"){
+            console.log("It's raining! Take umbrella.");
+        }
+        else if(weather.toLowerCase() == "snowing"){
+            console.log("It`s snowing! Wear up warm");
+        }
+        else if(weather.toLowerCase() == "sunny"){
+            console.log("Sunndy day!");
+        }else{
+            console.log("Check weather one more time");
+        }
+    }
+    chckWeather("raining");
+    chckWeather("snowing");
+    chckWeather("sunny");
+    chckWeather("i dont know");
+
+    let chckNumbers = (number) => {
+        for(var i = 1; i < number + 1; i++){
+            if(i % 2 == 0){
+                console.log(i + " is even number");
+            }
+            else{
+                console.log(i + " id odd number");
+            }
+        }
+    }
+
+    chckNumbers(25);
+
 })
