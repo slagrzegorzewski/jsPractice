@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     chckWeather("i dont know");
 
     let chckNumbers = (number) => {
-        for(var i = 1; i < number + 1; i++){
+        for(var i = 0; i < number + 1; i++){
             if(i % 2 == 0){
                 console.log(i + " is even number");
             }
