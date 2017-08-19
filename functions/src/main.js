@@ -51,6 +51,37 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
+    let calculateTip = (amount, raiting) => {
+
+        switch(raiting) {
+            case "verry good" :
+//                var tip = amount * 0.1;
+                console.log("Amount for meal: " + amount);
+                console.log("Tip: " + amount * 0.1);
+                break;
+
+            case "good" :
+//                const tip = amount * 0.08;
+                console.log("Amount for meal: " + amount);
+                console.log("Tip: " + amount * 0.08);
+                break;
+
+            case "medium" :
+//                const tip = amount * 0.05;
+                console.log("Amount for meal: " + amount);
+                console.log("Tip: " + amount * 0.05);
+                break;
+
+            case "bad" :
+                console.log("Amount for meal: " + amount);
+                console.log("Tip: 0");
+                break;
+
+            default :
+                console.log("Please, select one of options");
+        }
+    };
+
     let chckFunction = letsRock(10);
     console.log(chckFunction);
 
@@ -61,4 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     rentCost(1);
     rentCost(3);
     rentCost(8);
+
+    calculateTip(200, "good");
+    calculateTip(100, "verry good");
 })
